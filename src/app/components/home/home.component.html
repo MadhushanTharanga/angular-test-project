@@ -1,1 +1,18 @@
-<p>home works!</p>
+
+<app-customer-template
+  *ngFor="let cus of customer"
+[customer]="cus"
+></app-customer-template>
+
+
+
+
+
+
+
+        <!--<div class="outer" *ngFor="let tempCus of customer">-->
+        <!--  <img [src]="tempCus.avatar" alt="">-->
+        <!--  <h1>Customer name : {{tempCus.name}}</h1>-->
+        <!--  <h1>Customer address : {{tempCus.address}}</h1>-->
+        <!--  <h1>Customer age : {{tempCus.age}}</h1>-->
+        <!--</div>-->
