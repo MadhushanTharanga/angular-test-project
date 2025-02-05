@@ -8,5 +8,5 @@ import {Component, Input} from '@angular/core';
   styleUrl: './customer-template.component.scss'
 })
 export class CustomerTemplateComponent {
- @Input() customer :any;
+ @Input() pky :any;
 }
