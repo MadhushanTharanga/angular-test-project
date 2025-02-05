@@ -1,0 +1,14 @@
+.outer{
+  margin: 30px;
+}
+.outer a{
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid #0a3f23;
+  border-radius: 10px;
+  margin: 2px;
+}
+.active{
+  background-color: #10ad6c;
+  color: white;
+}
