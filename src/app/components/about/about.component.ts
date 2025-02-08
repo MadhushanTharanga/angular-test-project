@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {Observable} from "rxjs";
+import {debounceTime, Observable} from "rxjs";
 import {response} from "express";
 import {log} from "util";
 
@@ -22,8 +22,10 @@ export class AboutComponent implements   OnInit{
     // })
 
     this.searchText.valueChanges.pipe(
-      
-    )
+      debounceTime(500)
+    ).subscribe(value => {
+        console.log(`will make the request [${value}`)
+    })
   }
 
 }
