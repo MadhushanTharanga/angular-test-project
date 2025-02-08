@@ -2,3 +2,13 @@
   <label for="idSearch">Search here</label>
   <input type="text" id="idSearch" [formControl]="searchText" placeholder="search here">
 </div>
+<hr>
+<h1>{{text | uppercase}}</h1>
+<hr>
+<h1>{{date | date}}</h1>
+<hr>
+<h1>{{salary | currency:'lkr'}}</h1>
+<hr>
+<h1>{{name | slice:0:9}}</h1>
+<hr>
+<h1>{{user | json}}</h1>
